@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTA VI Landing Page Scroll Animation (JavaScript) | Codegrid</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .s0 {
+        fill: #ffffff;
+      }
+      .s1 {
+        fill: #14120e;
+      }
+      .s2 {
+        fill: #b5b1b0;
+      }
+      .s3 {
+        fill: #c21718;
+      }
+      .s4 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-img-container">
+        <img src="/749807.png" alt="" />
+
+        <div class="hero-img-logo">
+          <img src="/red-dead-redemption-outlaws-for-life-uhd-4k-wallpaper.png" alt="" />
+        </div>
+
+        <img class="arthur" src="/imgbin_348f00f826674eba0dd0002241a3a235.png" alt="" />
+
+        <div class="hero-img-copy">
+          <p>Scroll down to reveal</p>
+        </div>
+      </div>
+
+      <div class="fade-overlay"></div>
+
+      <div class="overlay">
+        <svg width="100%" height="100%">
+          <defs>
+            <mask id="logoRevealMask">
+              <rect width="100%" height="100%" fill="white" />
+              <defs>
+                <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                  <path d="m0 0h1000v1000h-1000z" />
+                </clipPath>
+              </defs>
+
+              <g id="logoMask" clip-path="url(#cp1)"></g>
+              <!-- the path of the logo itself 111117 -->
+            </mask>
+          </defs>
+          <rect width="100%" height="100%" id="logoReveal" fill="#111117" mask="url(#logoRevealMask)" />
+
+          <!-- Add a colored version of the logo that will be revealed later -->
+          <g id="coloredLogo" opacity="0">
+            <!-- This will be populated with the same path as logoMask but with original colors -->
+            <g id="coloredLogoContent"></g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="logo-container"></div>
+
+      <div class="overlay-copy">
+        <p class="quote-author">— Arthur Morgan</p>
+
+        <h1>"We're more ghosts than people."</h1>
+      </div>
+    </section>
+
+    <section class="outro">
+      <p class="quote"></p>
+    </section>
+
+    <script type="module" src="/logo.js"></script>
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

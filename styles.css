@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Outlaws For Life";
+  src: url("/chinese rocks rg.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Outlaws For Life", sans-serif;
+  background: #111117;
+  color: #d4af37;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+  line-height: 0.8;
+}
+
+p {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 0.8;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #111117;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-img-container,
+.hero-img-container .img,
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-img-logo img {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, 0%);
+  width: 450px;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-img-copy {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  will-change: opacity;
+}
+.outlaws-for-life {
+  font-size: 8vw;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+.hero-img-copy p {
+  font-size: 0.65rem;
+}
+
+.fade-overlay {
+  background-color: #fff;
+  will-change: opacity;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center 15%;
+  width: 100%;
+  height: 200%;
+  z-index: 1;
+}
+
+.logo-container {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 150px;
+  z-index: 2;
+}
+
+.overlay-copy {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 2;
+  letter-spacing: 2em;
+}
+
+.overlay-copy h1 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transform-origin: center 0%;
+  letter-spacing: 0.08em;
+}
+
+.outro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #111117;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.quote-author {
+  color: transparent;
+  z-index: 2;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .overlay-copy {
+    width: 100%;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+
+  .quote-author {
+    font-size: 1.2rem;
+  }
+}
+.arthur {
+  width: 35rem;
+  object-fit: contain;
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-30%);
+  bottom: -2rem;
+}
